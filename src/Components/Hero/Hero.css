@@ -1,0 +1,165 @@
+.hero{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.hero img{
+    margin-top: 15px;
+}
+
+.hero h1{
+    text-align: center;
+    width: 50%;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.hero h1 span{
+    background: linear-gradient(270deg, #DF8908 10%, #B415FF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p{
+    width: 50%;
+    text-align: center;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.hero-action{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.hero-connect{
+    padding: 15px 30px;
+    border-radius: 40px;
+    background: linear-gradient(264deg,#DF8908 -5.09%, #B415FF 106.28%);
+    cursor: pointer;
+}
+
+.hero-resume{
+    padding: 15px 50px;
+    border-radius: 30px;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+.hero-connect:hover{
+    border:1px solid white;
+}
+
+.hero-resume:hover{
+    border-color: #B415FF;
+}
+
+/* @media (max-width:768px) {
+    .hero img{
+        margin-top: 20px;
+        width: 260px;
+    }
+    .hero h1{
+        margin-top: 50px;
+        width: 90%;
+        font-size: 50px;
+    }
+    .hero p{
+        width: 60%;
+        font-size: 18px;
+        line-height: 32px;
+        margin: 10px 0px;
+    }
+    .hero-action{
+        gap: 16px;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 50px;
+    }
+    .hero-connect{
+        padding: 20px 30px;
+        border-radius: 40px;
+    }
+    .hero-resume{
+        padding: 20px 50px;
+        border-radius: 40px;
+    }
+} */
+
+
+
+/* Media Queries */
+
+/* Mobile (screen width <= 480px) */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 30px;
+        width: 90%; /* Make the heading more responsive */
+    }
+
+    .hero p {
+        font-size: 12px;
+        width: 90%; /* Make paragraph text fit on smaller screens */
+    }
+
+    .hero-action {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero-connect, .hero-resume {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+}
+
+/* Tablets (screen width <= 768px) */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 40px;
+        width: 70%;
+    }
+
+    .hero p {
+        font-size: 14px;
+        width: 70%; /* Adjust text width for readability */
+    }
+
+    .hero-action {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero-connect, .hero-resume {
+        padding: 14px 35px;
+        font-size: 15px;
+    }
+}
+
+/* Larger Screens (screen width > 1024px) */
+@media (min-width: 1024px) {
+    .hero h1 {
+        font-size: 50px;
+        width: 50%;
+    }
+
+    .hero p {
+        font-size: 15px;
+        width: 50%; /* Keep consistent width for larger screens */
+    }
+
+    .hero-action {
+        gap: 20px;
+    }
+
+    .hero-connect, .hero-resume {
+        padding: 15px 50px;
+    }
+}
